@@ -6,7 +6,7 @@ pool:
 
 variables:
   azureSubscription: 'Curso_DevOps' # Este es un nombre que debe cambiar al que crearon.
-  location: 'westus'
+  location: 'westus3'
   resourceGroupName: 'Curso_DevOps' # Este es un nombre que debe cambiar al que crearon.
   virtualNetworkName: 'VNet-DevOps'
   subnetName: 'Subnet-DevOps'
@@ -79,4 +79,5 @@ steps:
       # az vm run-command invoke --resource-group $(resourceGroupName) --name $(vmName) --command-id RunShellScript --scripts "sudo apt update && sudo apt install -y apache2"
       # az vm run-command invoke --resource-group $(resourceGroupName) --name $(vmName) --command-id RunShellScript --scripts "echo 'hola curso devops hemos automatizado el despliegue de maquina virtual desde azure devops' | sudo tee /var/www/html/index.html"
       # echo "Apache instalado y página de bienvenida configurada."
+
 
